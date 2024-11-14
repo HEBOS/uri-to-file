@@ -32,4 +32,8 @@ android {
     defaultConfig {
         minSdkVersion 16
     }
+
+    if (project.android.hasProperty("namespace")) {
+        namespace 'in.lazymanstudios.uri_to_file'
+    }
 }
